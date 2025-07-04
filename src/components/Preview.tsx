@@ -19,9 +19,14 @@ const Preview: React.FC<PreviewProps> = ({ markdownHtml }) => {
   }, [markdownHtml]);
 
   return (
-    <div className='h-full w-full overflow-auto bg-[#ffffff] dark:bg-[#0d1117]'>
+    <div className='h-full w-full overflow-auto'>
       <article
-        className='markdown-body max-w-none h-screen'
+        className='
+          markdown-body
+          max-w-none
+          bg-neutral-100 dark:bg-[#1c1e22]
+          text-zinc-900 dark:text-zinc-100
+          p-4 rounded-lg shadow-inner'
         dangerouslySetInnerHTML={{ __html: cleanHtml }}
       />
     </div>

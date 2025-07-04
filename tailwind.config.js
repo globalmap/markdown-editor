@@ -5,12 +5,12 @@ export default {
     extend: {
       colors: {
         github: {
-          dark: '#0d1117',
-          text: '#c9d1d9',
-          border: '#30363d',
+          dark: "#0d1117",
+          text: "#c9d1d9",
+          border: "#30363d",
         },
       },
     },
   },
-  plugins: [require("@tailwindcss/typography")],
+  plugins: [require("@tailwindcss/typography"), require("tailwind-scrollbar")],
 };
