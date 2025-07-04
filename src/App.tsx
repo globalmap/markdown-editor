@@ -47,7 +47,6 @@ function App() {
             className='px-3 py-1 rounded bg-red-500 hover:bg-red-600 text-white text-sm shadow'>
             Очистити
           </button>
-          {/* Можеш додати: Завантажити, Перемикач теми */}
         </div>
       </header>
 
