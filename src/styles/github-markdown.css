@@ -1,18 +1,13 @@
-@import url('https://cdnjs.cloudflare.com/ajax/libs/github-markdown-css/5.2.0/github-markdown-light.min.css');
+/* @import url('https://cdnjs.cloudflare.com/ajax/libs/github-markdown-css/5.2.0/github-markdown-light.min.css');
 
 @media (prefers-color-scheme: dark) {
   @import url('https://cdnjs.cloudflare.com/ajax/libs/github-markdown-css/5.2.0/github-markdown-dark.min.css');
-}
+} */
 
 .markdown-body {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
   box-sizing: border-box;
   line-height: 1.5;
   word-wrap: break-word;
-  /* background-color: transparent !important; */
   padding: 0;
-}
-
-.dark .markdown-body {
-  /* background-color: #1c1e22 !important; */
 }

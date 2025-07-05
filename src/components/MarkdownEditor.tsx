@@ -12,7 +12,7 @@ const MarkdownEditor: React.FC<MarkdownEditorProps> = ({ markdown, onChange }) =
         onChange={(e) => onChange(e.target.value)}
         className='
           w-full h-full
-          bg-zinc-900 dark:bg-zinc-900 text-white
+         bg-zinc-900 text-white
           font-mono text-sm
           p-4 rounded-md
           resize-none outline-none

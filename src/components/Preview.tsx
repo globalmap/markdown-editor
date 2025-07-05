@@ -23,9 +23,7 @@ const Preview: React.FC<PreviewProps> = ({ markdownHtml }) => {
       <article
         className='
           markdown-body
-          max-w-none
-          bg-neutral-100 dark:bg-[#1c1e22]
-          text-zinc-900 dark:text-zinc-100
+          max-w-none text-[#c9d1d9]
           p-4 rounded-lg shadow-inner'
         dangerouslySetInnerHTML={{ __html: cleanHtml }}
       />
