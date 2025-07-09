@@ -1,10 +1,19 @@
-
 interface MarkdownEditorProps {
   markdown: string;
   onChange: (value: string) => void;
+  lang: "uk" | "en";
 }
 
-const MarkdownEditor: React.FC<MarkdownEditorProps> = ({ markdown, onChange }) => {
+const placeholders = {
+  uk: "Почніть писати Markdown тут...",
+  en: "Start writing Markdown here...",
+};
+
+const MarkdownEditor: React.FC<MarkdownEditorProps> = ({
+  markdown,
+  onChange,
+  lang,
+}) => {
   return (
     <div className='h-full w-full'>
       <textarea
@@ -12,7 +21,7 @@ const MarkdownEditor: React.FC<MarkdownEditorProps> = ({ markdown, onChange }) =
         onChange={(e) => onChange(e.target.value)}
         className='
           w-full h-full
-         bg-zinc-900 text-white
+          bg-zinc-900 text-white
           font-mono text-sm
           p-4 rounded-md
           resize-none outline-none
@@ -22,7 +31,7 @@ const MarkdownEditor: React.FC<MarkdownEditorProps> = ({ markdown, onChange }) =
           scrollbar-thin scrollbar-thumb-zinc-700 scrollbar-track-transparent
         '
         spellCheck={false}
-        placeholder='Почніть писати Markdown тут...'
+        placeholder={placeholders[lang]}
       />
     </div>
   );
